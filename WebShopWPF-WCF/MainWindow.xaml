@@ -1,0 +1,48 @@
+﻿<Window x:Class="WebShopWPF_WCF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebShopWPF_WCF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="900" Width="1600">
+    <Grid>
+        <DataGrid x:Name="Felhasznalo_adatok"
+          AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" 
+          IsReadOnly="True" Margin="45,64,725,221" SelectionChanged="Felhasznalo_kivalaszt">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Width="30" Binding="{Binding Id}"/>
+                <DataGridTextColumn Header="LoginNev" Width="100" Binding="{Binding LoginNev}"/>
+                <DataGridTextColumn Header="HASH" Width="100" Binding="{Binding HASH}"/>
+                <DataGridTextColumn Header="SALT" Width="100" Binding="{Binding SALT}"/>
+                <DataGridTextColumn Header="Nev" Width="100" Binding="{Binding Nev}"/>
+                <DataGridTextColumn Header="Jog" Width="100" Binding="{Binding Jog}"/>
+                <DataGridTextColumn Header="Aktiv" Width="100" Binding="{Binding Aktiv}"/>
+                <DataGridTextColumn Header="Email" Width="110" Binding="{Binding Email}"/>
+                <DataGridTextColumn Header="ProfilKep" Width="100" Binding="{Binding ProfilKep}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="Lbl_LoginNev" Content="Login név" HorizontalAlignment="Left" Margin="926,119,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Txb_LoginNev" HorizontalAlignment="Left" Margin="924,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Lbl_HASH" Content="HASH" HorizontalAlignment="Left" Margin="924,173,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Txb_HASH" HorizontalAlignment="Left" Margin="926,204,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Lbl_SALT" Content="SALT" HorizontalAlignment="Left" Margin="926,227,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Txb_SALT" HorizontalAlignment="Left" Margin="926,258,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Lbl_Nev" Content="Név" HorizontalAlignment="Left" Margin="927,281,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Txb_Nev" HorizontalAlignment="Left" Margin="926,312,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Lbl_Jog" Content="Jog" HorizontalAlignment="Left" Margin="928,335,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Txb_Jog" HorizontalAlignment="Left" Margin="926,366,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Lbl_Aktiv" Content="Aktív" HorizontalAlignment="Left" Margin="926,389,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Txb_Aktiv" HorizontalAlignment="Left" Margin="928,420,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Lbl_Email" Content="Email" HorizontalAlignment="Left" Margin="927,438,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Txb_Email" HorizontalAlignment="Left" Margin="926,469,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Lbl_ProfilKep" Content="Profil Kép" HorizontalAlignment="Left" Margin="928,492,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Txb_ProfilKep" HorizontalAlignment="Left" Margin="926,523,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Btn_Hozzaadas" Content="Hozzáadás" HorizontalAlignment="Left" Margin="928,589,0,0" VerticalAlignment="Top" Click="Btn_Hozzaadas_Click"/>
+        <Button x:Name="Btn_Modositas" Content="Módosítás" HorizontalAlignment="Left" Margin="1029,589,0,0" VerticalAlignment="Top" Click="Btn_Modositas_Click"/>
+        <Button x:Name="Btn_Torles" Content="Törlés" HorizontalAlignment="Left" Margin="1136,589,0,0" VerticalAlignment="Top" Click="Btn_Torles_Click"/>
+        <Label x:Name="Lbl_Id" Content="Id" HorizontalAlignment="Left" Margin="928,64,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Txb_Id" HorizontalAlignment="Left" Margin="924,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Btn_Frissites" Content="Frissítés" HorizontalAlignment="Left" Margin="1229,589,0,0" VerticalAlignment="Top" Click="Btn_Frissites_Click"/>
+    </Grid>
+</Window>
