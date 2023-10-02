@@ -21,7 +21,7 @@ namespace WebShopWPF_WCF
     /// </summary>
     public partial class MainWindow : Window
     {
-        internal static Service1Client client = new Service1Client();
+        public static Service1Client client = new Service1Client();
         public MainWindow()
         {
             InitializeComponent();

@@ -14,7 +14,7 @@ namespace ServiceReference1
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Felhasznalo", Namespace="http://schemas.datacontract.org/2004/07/Server")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Felhasznalo", Namespace="http://schemas.datacontract.org/2004/07/Server.Models")]
     public partial class Felhasznalo : ServiceReference1.Record
     {
         
@@ -141,7 +141,7 @@ namespace ServiceReference1
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Record", Namespace="http://schemas.datacontract.org/2004/07/Server")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Record", Namespace="http://schemas.datacontract.org/2004/07/Server.Models")]
     [System.Runtime.Serialization.KnownTypeAttribute(typeof(ServiceReference1.Felhasznalo))]
     public partial class Record : object
     {
@@ -167,52 +167,52 @@ namespace ServiceReference1
     public interface IService1
     {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FelhasznaloLista_CS", ReplyAction="http://tempuri.org/IService1/FelhasznaloLista_CSResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFelhasznaloService/FelhasznaloLista_CS", ReplyAction="http://tempuri.org/IFelhasznaloService/FelhasznaloLista_CSResponse")]
         ServiceReference1.Felhasznalo[] FelhasznaloLista_CS();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FelhasznaloLista_CS", ReplyAction="http://tempuri.org/IService1/FelhasznaloLista_CSResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFelhasznaloService/FelhasznaloLista_CS", ReplyAction="http://tempuri.org/IFelhasznaloService/FelhasznaloLista_CSResponse")]
         System.Threading.Tasks.Task<ServiceReference1.Felhasznalo[]> FelhasznaloLista_CSAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FelhasznaloLista_Web", ReplyAction="http://tempuri.org/IService1/FelhasznaloLista_WebResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFelhasznaloService/FelhasznaloLista_Web", ReplyAction="http://tempuri.org/IFelhasznaloService/FelhasznaloLista_WebResponse")]
         ServiceReference1.Felhasznalo[] FelhasznaloLista_Web();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FelhasznaloLista_Web", ReplyAction="http://tempuri.org/IService1/FelhasznaloLista_WebResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFelhasznaloService/FelhasznaloLista_Web", ReplyAction="http://tempuri.org/IFelhasznaloService/FelhasznaloLista_WebResponse")]
         System.Threading.Tasks.Task<ServiceReference1.Felhasznalo[]> FelhasznaloLista_WebAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FelhasznaloHozzaAd_CS", ReplyAction="http://tempuri.org/IService1/FelhasznaloHozzaAd_CSResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFelhasznaloService/FelhasznaloHozzaAd_CS", ReplyAction="http://tempuri.org/IFelhasznaloService/FelhasznaloHozzaAd_CSResponse")]
         string FelhasznaloHozzaAd_CS(ServiceReference1.Felhasznalo felhasznalo);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FelhasznaloHozzaAd_CS", ReplyAction="http://tempuri.org/IService1/FelhasznaloHozzaAd_CSResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFelhasznaloService/FelhasznaloHozzaAd_CS", ReplyAction="http://tempuri.org/IFelhasznaloService/FelhasznaloHozzaAd_CSResponse")]
         System.Threading.Tasks.Task<string> FelhasznaloHozzaAd_CSAsync(ServiceReference1.Felhasznalo felhasznalo);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FelhasznaloHozzaAd_Web", ReplyAction="http://tempuri.org/IService1/FelhasznaloHozzaAd_WebResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFelhasznaloService/FelhasznaloHozzaAd_Web", ReplyAction="http://tempuri.org/IFelhasznaloService/FelhasznaloHozzaAd_WebResponse")]
         string FelhasznaloHozzaAd_Web(ServiceReference1.Felhasznalo felhasznalo);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FelhasznaloHozzaAd_Web", ReplyAction="http://tempuri.org/IService1/FelhasznaloHozzaAd_WebResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFelhasznaloService/FelhasznaloHozzaAd_Web", ReplyAction="http://tempuri.org/IFelhasznaloService/FelhasznaloHozzaAd_WebResponse")]
         System.Threading.Tasks.Task<string> FelhasznaloHozzaAd_WebAsync(ServiceReference1.Felhasznalo felhasznalo);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FelhasznaloModosit_CS", ReplyAction="http://tempuri.org/IService1/FelhasznaloModosit_CSResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFelhasznaloService/FelhasznaloModosit_CS", ReplyAction="http://tempuri.org/IFelhasznaloService/FelhasznaloModosit_CSResponse")]
         string FelhasznaloModosit_CS(ServiceReference1.Felhasznalo felhasznalo);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FelhasznaloModosit_CS", ReplyAction="http://tempuri.org/IService1/FelhasznaloModosit_CSResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFelhasznaloService/FelhasznaloModosit_CS", ReplyAction="http://tempuri.org/IFelhasznaloService/FelhasznaloModosit_CSResponse")]
         System.Threading.Tasks.Task<string> FelhasznaloModosit_CSAsync(ServiceReference1.Felhasznalo felhasznalo);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FelhasznaloModosit_Web", ReplyAction="http://tempuri.org/IService1/FelhasznaloModosit_WebResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFelhasznaloService/FelhasznaloModosit_Web", ReplyAction="http://tempuri.org/IFelhasznaloService/FelhasznaloModosit_WebResponse")]
         string FelhasznaloModosit_Web(ServiceReference1.Felhasznalo felhasznalo);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FelhasznaloModosit_Web", ReplyAction="http://tempuri.org/IService1/FelhasznaloModosit_WebResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFelhasznaloService/FelhasznaloModosit_Web", ReplyAction="http://tempuri.org/IFelhasznaloService/FelhasznaloModosit_WebResponse")]
         System.Threading.Tasks.Task<string> FelhasznaloModosit_WebAsync(ServiceReference1.Felhasznalo felhasznalo);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FelhasznaloTorles_CS", ReplyAction="http://tempuri.org/IService1/FelhasznaloTorles_CSResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFelhasznaloService/FelhasznaloTorles_CS", ReplyAction="http://tempuri.org/IFelhasznaloService/FelhasznaloTorles_CSResponse")]
         string FelhasznaloTorles_CS(int id);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FelhasznaloTorles_CS", ReplyAction="http://tempuri.org/IService1/FelhasznaloTorles_CSResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFelhasznaloService/FelhasznaloTorles_CS", ReplyAction="http://tempuri.org/IFelhasznaloService/FelhasznaloTorles_CSResponse")]
         System.Threading.Tasks.Task<string> FelhasznaloTorles_CSAsync(int id);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FelhasznaloTorles_Web", ReplyAction="http://tempuri.org/IService1/FelhasznaloTorles_WebResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFelhasznaloService/FelhasznaloTorles_Web", ReplyAction="http://tempuri.org/IFelhasznaloService/FelhasznaloTorles_WebResponse")]
         string FelhasznaloTorles_Web(int id);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FelhasznaloTorles_Web", ReplyAction="http://tempuri.org/IService1/FelhasznaloTorles_WebResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IFelhasznaloService/FelhasznaloTorles_Web", ReplyAction="http://tempuri.org/IFelhasznaloService/FelhasznaloTorles_WebResponse")]
         System.Threading.Tasks.Task<string> FelhasznaloTorles_WebAsync(int id);
     }
     
